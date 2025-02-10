@@ -33,7 +33,7 @@ public class AddToCard {
     }
     public  String CheckAlertMsg() throws InterruptedException {
         //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         return  driver.switchTo().alert().getText();
     }
     public  void  acceptAlert(){

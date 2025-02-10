@@ -57,7 +57,7 @@ public void clickSignUpBtn(){
         driver.findElement(LoginLocator).click();
     }
     public void insertLoginName(String loginName){
-        wait= new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait= new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(LoginUsernameLocator)));
         driver.findElement(LoginUsernameLocator).sendKeys(loginName);
     }

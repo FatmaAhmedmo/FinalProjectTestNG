@@ -53,7 +53,7 @@ public class LogedUserHomePage {
          // wait.until(ExpectedConditions.visibilityOf(driver.findElement(SonyVaioI5Locator)));
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         WebElement SonyVaioI5 = wait.until(ExpectedConditions.visibilityOfElementLocated(SonyVaioI5Locator));
-        //Thread.sleep(3000);
+        Thread.sleep(3000);
         driver.findElement(itemLocator).click();
         return new AddToCardGlobal(driver);
     }

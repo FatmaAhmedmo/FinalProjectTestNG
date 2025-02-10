@@ -11,7 +11,7 @@ public class SignUp extends BaseSteps {
     public void registerUser() throws InterruptedException {
         homePage.clickSignUp();
         // Thread.sleep(3000); // replaced by explicit wait
-        homePage.inserUserName("test879");
+        homePage.inserUserName("test888888879");
         homePage.inserPassword("fatma");
         homePage.clickSignUpBtn();
         String actualResult = homePage.CheckAlertMsg();

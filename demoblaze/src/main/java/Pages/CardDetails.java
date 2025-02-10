@@ -46,6 +46,7 @@ public class CardDetails {
     }
     public String checkTotalPrice(){
        String totalPrice= driver.findElement(totalPriceLocator).getText();
+        System.out.println(totalPrice);
         return totalPrice ;
     }
     public void placeorder(String name ,String country,String city ,int creditcard ,int month , int year) throws InterruptedException {

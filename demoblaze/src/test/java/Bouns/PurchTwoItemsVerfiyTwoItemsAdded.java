@@ -58,6 +58,12 @@ public class PurchTwoItemsVerfiyTwoItemsAdded extends BaseSteps {
         System.out.println(cartsize2);
         //Assert.assertTrue(cartsize2==cartsize1+1);
         Assert.assertEquals(cartsize2,cartsize1+1);
+        cardDetails.placeorder("Fatma", "Egypt","Giza",123456,01,2025);
+        String palceorderMsg= cardDetails.CheckSweetAlertMsg();
+
+        System.out.println(palceorderMsg);
+        String expextedPalceorderMsg = "Thank you for your purchase!";
+        Assert.assertTrue(palceorderMsg.contains(expextedPalceorderMsg));
 
     }
 }

@@ -78,9 +78,9 @@ public class LoginandPurchase extends BaseSteps {
         Assert.assertTrue(actualResult.contains(expextedResult1) || actualResult.contains(expextedResult2));
     }
     // assert total price
-//    String totalPrice =cardDetails.checkTotalPrice();
-//    String expectedtotalPrice = "1580";
-//    Assert.assertTrue(totalPrice.contains(expectedtotalPrice));
+   String totalPrice =cardDetails.checkTotalPrice();
+    String expectedtotalPrice = "1580";
+    Assert.assertTrue(totalPrice.contains(expectedtotalPrice));
 
     cardDetails.placeorder("Fatma", "Egypt","Giza",123456,01,2025);
     String palceorderMsg= cardDetails.CheckSweetAlertMsg();
